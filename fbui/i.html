@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      .card{
+        width:400px;
+        height:225px;
+        margin-top:225px;
+        background-color:grey;
+        border-radius:45px;
+      }
+      .container{
+        padding:2px 16px;
+      }
+    </style>
+</head>
+<body bgcolor="black">
+  <center>
+   <div class="card">
+  <div class="container">
+    <p style="color:black"><b><u>ADDITION</u></b></p>
+    <p>Enter the First Number : <input id="first"></p>
+<p>Enter the Second Number: <input id="second"></p>
+<button onclick="add()">Add</button>
+<button onclick="document.getElementById ('first').value='', document.getElementById ('second').value='',document.getElementById ('answer').value=''">clear</button>
+<p>Sum = <input id="answer"></p>
+</div>
+</div>
+</center>
+</body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="add.js"></script>
+</html>

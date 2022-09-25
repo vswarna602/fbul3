@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>Dark Mode</title>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+  </script>
+    <style>
+      body{
+		padding:10% 3% 10% 3%;
+		text-align:center;
+		}
+		img{
+			height:140px;
+				width:140px;
+		}
+		h1{
+		color: #32a852;
+		}
+		.mode {
+			float:right;
+		}
+		.change {
+			cursor: pointer;
+			border: 1px solid #555;
+			border-radius: 40%;
+			width: 20px;
+			text-align: center;
+			padding: 5px;
+			margin-left: 8px;
+		}
+		.dark{
+			background-color: #222;
+			color: #e6e6e6;
+		}
+      .card{
+        width:450px;
+        height:280px;
+        margin-top:110px;
+        background-color:skyblue;
+        border-radius:45px;
+      }
+      .container{
+        padding:2px 16px;
+      }
+    </style>
+      <meta charset="utf-8">
+        <title>Login</title>
+</head>
+<body bgcolor="pink">
+  <center>
+    <div class="mode">
+      Dark mode:			
+      <span class="change">OFF</span>
+    </div>
+    
+    <div>
+  
+    </div>
+    
+    <script>
+      $( ".change" ).on("click", function() {
+        if( $( "body" ).hasClass( "dark" )) {
+          $( "body" ).removeClass( "dark" );
+          $( ".change" ).text( "OFF" );
+        } else {
+          $( "body" ).addClass( "dark" );
+          $( ".change" ).text( "ON" );
+        }
+      });
+    </script>
+<div class="card">
+  <div class="container">
+    <p>LOGIN FORM</p>
+    <p><input type="text" id="full_name" placeholder="Full name"></p>
+    <p><input type="email" id="email" placeholder="Email"></p>
+    <p><input type="password" id="password" placeholder="Password"></p>
+    <button onclick="Login()">Login</button>
+
+    <p>Don't have an account</p>
+    <p><a href="index.html" target="index.html">Register</a></p>
+</div>
+</div> 
+</center>
+</body>
+ 
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  
+   <!-- Our script must be loaded after firebase references -->
+   <script src="Login.js"></script>
+</html>
